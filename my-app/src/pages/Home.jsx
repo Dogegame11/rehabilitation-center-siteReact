@@ -4,7 +4,6 @@ import AppointmentButton from "../components/elements/AppointmentButton";
 import SecondBlock from "../components/body/SecondBlock/Reason-block";
 import Form from "../components/elements/Form";
 import { useState } from "react";
-import Footer from "../components/body/Footer/Footer";
 
 function Greeting() {
   return (
@@ -32,7 +31,6 @@ export default function Home() {
         <div className="btn-wrapper">
           <AppointmentButton name="Отримати відповідь" />
         </div>
-        <Footer />
       </main>
     </>
   );
