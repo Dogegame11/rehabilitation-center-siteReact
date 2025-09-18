@@ -1,0 +1,94 @@
+
+body {
+  margin: 0;
+ font-family: 'Montserrat', sans-serif;
+  background-color: #f8fdfc;
+  color: #333;
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #d0f0e8, #a7e4d2);
+  padding: 15px 40px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+
+.column-left,
+.column-right {
+  flex: 0;
+}
+
+.column-center {
+  flex: 0 0 auto;
+}
+
+
+.logo img {
+  height: 60px;
+  object-fit: contain;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  padding: 0;
+  margin: 0;
+}
+
+header li {
+  font-weight: 500;
+}
+
+header li a {
+  text-decoration: none;
+  color: inherit; /* бере колір тексту з header */
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+header li a:hover {
+  color: #007f5f;
+  transform: translateY(-2px);
+}
+
+header li:hover {
+  color: #007f5f;
+  transform: translateY(-2px);
+}
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  header {
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 30px;
+  }
+
+  header ul {
+    /* flex-direction: column; */
+    gap: 15px;
+    text-align: left;
+    /* display: none;  */
+    width: 100%;
+  }
+
+
+  .logo img {
+    height: 50px;
+    margin: 10px 0;
+  }
+}
