@@ -4,6 +4,7 @@ import AppointmentButton from "../components/elements/AppointmentButton";
 import SecondBlock from "../components/body/SecondBlock/Reason-block";
 import Form from "../components/elements/Form";
 import { useState } from "react";
+import Banner from "../components/body/BannerForm";
 
 function Greeting() {
   return (
@@ -19,11 +20,27 @@ function Greeting() {
   );
 }
 
+function ExampleBtn({ initialBtn, initialColorBtn }) {
+  const [textBtn, setTextBtn] = useState(initialBtn);
+  const [color, setColor] = useState(initialColorBtn);
+
+  function DoSmth() {
+    setTextBtn("Text has benn changed");
+    setColor("btn-green");
+  }
+  return (
+    <button className={color} onClick={DoSmth}>
+      {textBtn}
+    </button>
+  );
+}
+
 export default function Home() {
   const [isFormVisible, setFormVisible] = useState(false);
   return (
     <>
       <main>
+        {/* <ExampleBtn initialBtn="Click me" initialColorBtn="" /> */}
         <Greeting />
         <ContentWork />
         <SecondBlock />
@@ -31,6 +48,7 @@ export default function Home() {
         <div className="btn-wrapper">
           <AppointmentButton name="Отримати відповідь" />
         </div>
+        <Banner name="Втомились від Геморою???" />
       </main>
     </>
   );

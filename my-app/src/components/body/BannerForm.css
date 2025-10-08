@@ -1,0 +1,81 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  padding: 30px 40px;
+  margin: 50px auto;
+  max-width: 700px;
+  width: 90%; /* адаптивно під екран */
+  box-sizing: border-box; /* padding враховується у width */
+
+  font-family: "Segoe UI", Roboto, sans-serif;
+  color: #222;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.left-side {
+  flex: 2;
+}
+
+.right-side {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* зелений заголовок */
+.titleFont {
+  color: #2ecc71;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.left-side p {
+  font-size: 1.1rem;
+  color: #444;
+}
+
+/* --- Мобільна адаптація --- */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column; /* кнопка під текстом */
+    align-items: stretch;   /* заповнює ширину доступного простору */
+    gap: 20px;
+    padding: 20px 25px;
+    width: 95%; /* трохи менше, щоб не прилипало до країв */
+  }
+
+  .right-side {
+    justify-content: center; /* кнопка по центру під текстом */
+    width: 100%;
+  }
+
+  .titleFont {
+    font-size: 1.6rem;
+  }
+
+  .left-side p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 15px 20px;
+  }
+
+  .titleFont {
+    font-size: 1.4rem;
+  }
+
+  .left-side p {
+    font-size: 0.95rem;
+  }
+}

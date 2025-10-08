@@ -1,6 +1,33 @@
 .container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 50vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 30px;
+
+  background-color: #f9fafc;
+  border-radius: 16px;
+   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+
+  padding: 30px 40px;
+  margin: 50px auto;
+  width: 100%;
+  height: auto;
+  /* min-height: 50vh; */
+
+  font-family: "Segoe UI", Roboto, sans-serif;
+  color: #222;
+}
+
+
+.header div, p {
+    margin: 10px;
+}
+
+.right-side{
+    width: 90%;
+}
+
+.right-side img {
+    width: 150%;
+    /* height: 20vh; */
 }
