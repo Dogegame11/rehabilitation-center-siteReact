@@ -1,5 +1,5 @@
 import Banner from "../components/body/BannerForm";
-import "./services.css";
+import "./Services.css";
 
 export default function Services() {
   return (
