@@ -1,1 +1,10 @@
 
+.background-content {
+  background-color: #e7e5e5e0;
+  border-radius: 16px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  padding: 30px 40px;
+  width: 100%;
+  box-sizing: border-box;
+} 
+

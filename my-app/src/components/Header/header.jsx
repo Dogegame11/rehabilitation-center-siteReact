@@ -20,7 +20,15 @@ export default function Header() {
               to="/services"
               className={({ isActive }) => (isActive ? "active" : "")}
             >
-              Послуги
+              Про спеціаліста
+            </NavLink>
+          </li>
+          <li>
+            <NavLink
+              to="/sertificates"
+              className={({ isActive }) => (isActive ? "active" : "")}
+            >
+              Сертифікати
             </NavLink>
           </li>
         </ul>

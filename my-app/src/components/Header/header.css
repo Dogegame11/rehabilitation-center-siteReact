@@ -38,7 +38,7 @@ header {
 header ul {
   list-style: none;
   display: flex;
-  gap: 25px;
+  gap: 35px;
   padding: 0;
   margin: 0;
 }
@@ -49,7 +49,7 @@ header li {
 
 header li a {
   text-decoration: none;
-  color: inherit; /* бере колір тексту з header */
+  color: inherit; 
   transition: color 0.3s ease, transform 0.2s ease;
 }
 
